@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/dirt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:text="Score: "
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="97dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:text="Time: "
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="16dp"
+        tools:layout_editor_absoluteY="22dp"
+        tools:layout_editor_absoluteX="272dp" />
+
+    <ImageButton
+        android:id="@+id/diglett1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221"
+        app:srcCompat="@mipmap/diglettin" />
+
+    <ImageButton
+        android:id="@+id/diglett2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="onClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/diglett1"
+        app:srcCompat="@mipmap/diglettin" />
+
+    <ImageButton
+        android:id="@+id/diglett3"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="onClick"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/diglett2"
+        app:srcCompat="@mipmap/diglettin" />
+
+    <ImageButton
+        android:id="@+id/diglett4"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="onClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diglett1"
+        app:srcCompat="@mipmap/diglettin" />
+
+    <ImageButton
+        android:id="@+id/diglett5"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="-7dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="onClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/diglett4"
+        app:srcCompat="@mipmap/diglettin" />
+
+    <ImageButton
+        android:id="@+id/diglett6"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="-7dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="onClick"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/diglett5"
+        app:srcCompat="@mipmap/diglettin" />
+
+    <ImageButton
+        android:id="@+id/diglett7"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="onClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diglett4"
+        app:srcCompat="@mipmap/diglettin" />
+
+    <ImageButton
+        android:id="@+id/diglett8"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="onClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/diglett7"
+        app:srcCompat="@mipmap/diglettin" />
+
+    <ImageButton
+        android:id="@+id/diglett9"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="onClick"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/diglett8"
+        app:srcCompat="@mipmap/diglettin" />
+
+</android.support.constraint.ConstraintLayout>
